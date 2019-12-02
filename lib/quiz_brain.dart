@@ -37,13 +37,9 @@ class QuizBrain {
     }
   }
 
-  String getQuestionText() {
-    return _questionBank[_questionNumber].questionText;
-  }
+  String getQuestionText() => _questionBank[_questionNumber].questionText;
 
-  bool getCorrectAnswer() {
-    return _questionBank[_questionNumber].questionAnswer;
-  }
+  bool getCorrectAnswer() => _questionBank[_questionNumber].questionAnswer;
 
   bool isFinished() => _questionNumber == _questionBank.length - 1;
 
